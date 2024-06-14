@@ -7,5 +7,5 @@ const blogRoute = express.Router()
 
 blogRoute.get('/', getAllBlogs);
 blogRoute.post('/new', newBlog)
-
+ 
 module.exports = blogRoute;

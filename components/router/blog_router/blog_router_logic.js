@@ -17,7 +17,7 @@ const newBlog = async (req, res) => {
     const {blog_title, blog_img, publisher_name, blog_value} = req.body;
     if (!blog_title || !blog_img || !publisher_name || !blog_value) {
         return res.status(400).json({msg: 'Fill all the data'})
-    }
+    } 
 
     try {
         const unique_id = uuid();
