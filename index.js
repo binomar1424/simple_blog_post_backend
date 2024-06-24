@@ -35,4 +35,4 @@ app.use('/products', productRoute);
 app.use('/product_images', express.static('images/products'));
 
 // R U N  T H E  S E R V E R
-app.listen(PORT, () => {console.log('Server is running')})
+app.listen(PORT, () => {console.log('Server is running on: ', PORT)});
